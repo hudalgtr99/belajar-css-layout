@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .content {
+            background-color: aqua;
+            border: 1px solid blue;
+            padding: 5px;
+            margin: 5px;
+        }
+
+        .content1 {
+            flex-basis: 300px;
+            flex-shrink: 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="content content1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis facere eos pariatur dolore commodi repudiandae quae cumque a error at quibusdam sequi dicta, cum reiciendis nihil, iste natus suscipit recusandae.</div>
+        <div class="content content2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis facere eos pariatur dolore commodi repudiandae quae cumque a error at quibusdam sequi dicta, cum reiciendis nihil, iste natus suscipit recusandae.</div>
+        <div class="content content3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis facere eos pariatur dolore commodi repudiandae quae cumque a error at quibusdam sequi dicta, cum reiciendis nihil, iste natus suscipit recusandae.</div>
+    </div>
+</body>
+</html>
+
+<!-- Sauce  -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis    -->
