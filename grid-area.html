@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Area</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns:100px auto 100px;
+            grid-template-rows: 50px auto 100px;
+            grid-template-areas: 
+                "header header header"
+                ". content ."
+                "footer footer footer";
+        }
+
+        .header {
+            background-color: aqua;
+            grid-area: header;
+        }
+
+        .footer {
+            background-color: aqua;
+            grid-area: footer;
+        }
+
+        .content {
+            background-image: linear-gradient(45deg, rgba(182,182,182,1) 0%, rgba(214,0,255,1) 25%, rgba(25,0,255,1) 50%, rgba(214,0,255,1) 75%, rgba(182,182,182,1) 100%);
+            grid-area: content;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat Datang di Web Programmer Zaman Now
+        </div>
+        <div class="content">
+            <h1>Programmer Zaman Now</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam rem aliquid necessitatibus itaque natus assumenda tempore earum consectetur, dolor saepe beatae ad amet, temporibus, suscipit tenetur deleniti libero ullam nostrum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui similique consequatur modi velit recusandae voluptate ullam excepturi necessitatibus! Beatae tenetur ipsum, eos inventore qui dignissimos sunt velit alias nulla ad.</p>
+        </div>
+        <div class="footer">
+            Develop with love by Miftahul Huda Guntara
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Sauce -->
+<!-- Untuk membuat Grid Area, kita bisa menggunakan atribut grid-template-areas
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas
+Dan untuk menentukan Grid Item muncul di area mana, kita bisa gunakan atribut grid-area
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area  -->
