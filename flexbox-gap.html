@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flexbox Align Items</title>
+    <title>Flexbox Gap</title>
 
     <style>
         .container {
             display: flex;
-            height: 500px;
+            height: 1500px;
             background-color: grey;
             align-items: center;
+            align-content: center;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .content {
@@ -40,9 +42,17 @@
             <h1>Konten 3</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero necessitatibus voluptate neque, repellendus at rem amet aliquid doloribus reprehenderit veniam officiis perferendis tenetur inventore sint non numquam fugiat ex!</p>
         </div>
+        <div class="content">
+            <h1>Konten 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero necessitatibus voluptate neque, repellendus at rem amet aliquid doloribus reprehenderit veniam officiis perferendis tenetur inventore sint non numquam fugiat ex!</p>
+        </div>
+        <div class="content">
+            <h1>Konten 5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vero necessitatibus voluptate neque, repellendus at rem amet aliquid doloribus reprehenderit veniam officiis perferendis tenetur inventore sint non numquam fugiat ex!</p>
+        </div>
     </div>
 </body>
 </html>
 
 <!-- Sauce -->
-<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/align-items   -->
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/align-content    -->
