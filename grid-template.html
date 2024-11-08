@@ -8,8 +8,8 @@
     <style>
         .container {
             display: grid;
-            grid-template-columns: 200px auto 200px;
-            grid-template-rows: 500px auto;
+            grid-template-columns: [cline1] 200px [cline2] auto [cline3] 200px;
+            grid-template-rows: [rline1] 500px [rline2] auto [rline3];
         }
 
         .content {
@@ -52,3 +52,8 @@
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns 
 Atribut grid-template-rows digunakan untuk menentukan baris
 https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows  -->
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-start
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column-end
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-start 
+https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row-end  -->
